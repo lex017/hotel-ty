@@ -42,7 +42,7 @@ type ReviewSectionProps = {
   users?: User[];
   initialReviews?: Review[];
 };
-
+  
 function ReviewSection({ users = [], initialReviews = [] }: ReviewSectionProps) {
   const [reviews, setReviews] = useState<Review[]>(initialReviews || []);
   const [text, setText] = useState("");
@@ -202,6 +202,7 @@ export default function ProductDetail(): JSX.Element {
         <div className="ht-btn">
            <Link
             to="/reserve"
+            state={{ product }}
           >
             Reserve
            </Link>

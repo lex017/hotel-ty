@@ -1,0 +1,139 @@
+/* PaymentPage.module.css - scoped styles for PaymentPage component */
+
+.pageWrap {
+  padding: 28px 16px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: #f6f7fb;
+  min-height: calc(100vh - 40px);
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: 2fr 360px;
+  }
+}
+
+/* Left area */
+.left { }
+.card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(20, 24, 40, 0.04);
+}
+
+.heading { margin: 0 0 12px 0; font-size: 20px; font-weight: 600; }
+
+.methods {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+@media (max-width: 640px) {
+  .methods { grid-template-columns: 1fr; }
+}
+
+.methodBtn {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #eef2f6;
+  background: #ffffff;
+  cursor: pointer;
+  transition: transform .08s ease, box-shadow .08s ease, border-color .08s ease;
+  text-align: left;
+}
+.methodBtn:hover { transform: translateY(-3px); box-shadow: 0 6px 16px rgba(16,24,40,0.04); }
+.active { border-color: #93c5fd; box-shadow: 0 6px 18px rgba(37,99,235,0.06); }
+
+.icon { font-size: 20px; width: 28px; text-align: center; }
+
+.methodTitle { font-weight: 600; font-size: 14px; }
+.methodDesc { font-size: 12px; color: #6b7280; }
+
+/* divider */
+.divider { height: 1px; background: linear-gradient(90deg, rgba(234,238,255,0.0), rgba(234,238,255,1), rgba(234,238,255,0.0)); margin: 14px 0; }
+
+/* detail area */
+.detail { margin-top: 8px; }
+.detailTitle { font-size: 16px; margin: 0 0 8px 0; font-weight: 600; }
+.detailText { color: #4b5563; margin-bottom: 12px; }
+
+/* QR */
+.qrWrap { display: flex; gap: 12px; align-items: center; margin-bottom: 12px; flex-wrap:wrap; }
+.qr { border-radius: 6px; box-shadow: 0 1px 4px rgba(2,6,23,0.06); }
+.qrActions { display:flex; gap:8px; flex-direction: column; }
+@media (min-width: 420px) { .qrActions { flex-direction: row; } }
+
+/* forms */
+.formRow { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+@media (max-width: 820px) { .formRow { grid-template-columns: 1fr; } }
+
+.label { display:block; font-size: 13px; color: #111827; }
+.input { width: 100%; padding: 10px 12px; margin-top: 6px; border-radius: 8px; border: 1px solid #e5e7eb; font-size: 14px; background: #fff; box-sizing: border-box; }
+
+/* buttons */
+.primary {
+  background: #2563eb;
+  color: #fff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+.secondary {
+  background: #eef2ff;
+  color: #1e40af;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+}
+.tertiary {
+  background: #fff;
+  color: #111827;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  cursor: pointer;
+}
+.ghost { background: transparent; border: 0; color: #2563eb; cursor: pointer; }
+
+/* right summary */
+.right { }
+.summaryCard { background: #fff; padding: 14px; border-radius: 10px; box-shadow: 0 6px 18px rgba(16,24,40,0.04); position: sticky; top: 24px; }
+.summaryImage { width: 100%; height: 140px; object-fit: cover; border-radius: 8px; margin-bottom: 10px; }
+.summaryTitle { font-weight: 700; margin-bottom: 4px; }
+.summaryMeta { color: #6b7280; font-size: 13px; margin-bottom: 10px; }
+
+.row { display:flex; justify-content: space-between; align-items:center; gap: 12px; }
+
+.metaSmall { font-size: 12px; color: #6b7280; }
+.bold { font-weight: 600; }
+
+.price { font-weight: 700; font-size: 18px; }
+.strike { text-decoration: line-through; color: #9ca3af; margin-left: 8px; font-weight: 500; }
+
+.breakdown { margin-top: 12px; color: #374151; font-size: 14px; }
+.line { display:flex; justify-content: space-between; margin: 6px 0; }
+.lineBold { font-weight: 700; }
+
+.small { font-size: 13px; color: #6b7280; margin-top: 6px; }
+
+/* responsive tweaks */
+@media (max-width: 640px) {
+  .pageWrap { padding: 18px 10px; }
+  .summaryCard { position: static; top: auto; }
+}

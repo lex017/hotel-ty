@@ -14,6 +14,8 @@ import Roomtype from "./components/roomtype";
 import City from "./components/city";
 import ReservePage from "./components/reserve";
 import Navadmin from "./login/navadmin";
+import PaymentPage from "./components/payment";
+
 
 
 function App() {
@@ -89,6 +91,8 @@ function AppContent() {
           <Route path="/city/:city" element={<City />} />
           <Route path="/promotion" element={<Promotion />} />
           <Route path="/reserve" element={<ReservePage />} />
+          <Route path="/payment" element={<PaymentPage />} />
+          
           <Route path="/" element={<Homepage />} />
           <Route path="*" element={<Homepage />} />
         </Routes>

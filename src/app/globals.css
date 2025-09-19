@@ -1018,6 +1018,39 @@ body{
 .promo-card:hover {
   transform: translateY(-5px);
 }
+.pro-product-card {
+  border: 1px solid #eee;
+  padding: 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+}
+
+.price-section {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.discounted-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #e53935;
+}
+
+.original-price {
+  font-size: 14px;
+  color: #999;
+}
+
+.discount-badge {
+  background: #e53935;
+  color: #fff;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
 
 .pro-box {
   padding: 20px;
@@ -1228,3 +1261,130 @@ body{
   flex: 1;
   padding: 20px;
 }
+
+
+
+.payment-container {
+  max-width: 500px;
+  height: 800px;
+  margin: 40px auto;
+  padding: 25px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  font-family: Arial, sans-serif;
+}
+
+.payment-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.payment-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.payment-option input {
+  accent-color: #1a73e8;
+}
+
+.payment-option:hover {
+  border-color: #1a73e8;
+}
+
+.payment-option.active {
+  border-color: #1a73e8;
+  background: #f0fff4;
+}
+
+.payment-details {
+  margin-top: 10px;
+}
+
+.payment-info {
+  background: #f8f8f8;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.qr-box {
+  text-align: center;
+}
+
+.qr-image {
+  width: 200px;
+  height: 200px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.card-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.card-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.input {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #1a73e8;
+}
+
+.pay-btn {
+  padding: 12px;
+  background: #1a73e8;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.pay-btn:hover {
+  background: #43a047;
+}
+
+
+

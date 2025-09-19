@@ -50,6 +50,9 @@ function NavSuccess() {
             <Link to="/profile" className="dropdown-item">
               Profile
             </Link>
+            <Link to="/history" className="dropdown-item">
+              History
+            </Link>
             <button
               onClick={handleLogout}
               className="dropdown-item logout-btn"

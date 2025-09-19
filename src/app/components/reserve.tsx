@@ -32,8 +32,8 @@ export default function ReservePage(): JSX.Element {
   const { product } = location.state || {};
 
   const handlePayment = () => {
-  navigate("/payment", { state: { product, formData, grandTotal } });
-};
+    navigate("/payment", { state: { product, formData, grandTotal } });
+  };
 
 
   const handleChange = (
@@ -124,13 +124,14 @@ export default function ReservePage(): JSX.Element {
               }}
             >
               <label>
-                Title
-                <select name="title" className="input title-select">
-                  <option>Mr</option>
-                  <option>Mrs</option>
-                  <option>Ms</option>
+                Gender
+                <select name="gender" className="input gender-select">
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
                 </select>
               </label>
+
 
               <label>
                 First Name
@@ -322,7 +323,7 @@ export default function ReservePage(): JSX.Element {
               </small>
             </div>
 
-            <button  onClick={handlePayment} className="reserve-btn">
+            <button onClick={handlePayment} className="reserve-btn">
               Pay Now
             </button>
           </div>

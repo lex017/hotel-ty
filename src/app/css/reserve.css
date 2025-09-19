@@ -60,7 +60,7 @@
 
 /* form controls */
 label { display: block; font-size: 14px; color: #111827; }
-.input, select, textarea {
+.input {
   width: 100%;
   padding: 10px;
   margin-top: 6px;

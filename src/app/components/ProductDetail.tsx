@@ -227,9 +227,7 @@ export default function ProductDetail(): JSX.Element {
             <p>{user[0].Username}</p>
             <p>{review[0].comment}</p>
 
-            <button className="open-comments-btn" onClick={() => setDrawerOpen(true)} aria-expanded={drawerOpen} aria-controls="comment-drawer">
-              View all comments →
-            </button>
+          <br />
           </div>
 
           <aside id="comment-drawer" className={`comment-drawer ${drawerOpen ? "open" : ""}`} role="dialog" aria-modal="false" aria-label="Comments panel">

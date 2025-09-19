@@ -8,10 +8,7 @@ function search() {
                     <div className="sea">
                         <input type="search" placeholder='Where are you going?' />
                     </div>
-                    <div className="select-date">
-                        <input type="date" />
-                        <input type="date" />
-                    </div>
+                   
                     <div className="select-room">
                         <div className="select-room">
                             <select>

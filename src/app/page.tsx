@@ -15,7 +15,8 @@ import City from "./components/city";
 import ReservePage from "./components/reserve";
 import Navadmin from "./login/navadmin";
 import PaymentPage from "./components/payment";
-
+import Report from "./components/report";
+import BookingHistory from "./components/history";
 
 
 function App() {
@@ -92,6 +93,8 @@ function AppContent() {
           <Route path="/promotion" element={<Promotion />} />
           <Route path="/reserve" element={<ReservePage />} />
           <Route path="/payment" element={<PaymentPage />} />
+          <Route path="/report" element={<Report />} />
+          <Route path="/history" element={<BookingHistory />} />
           
           <Route path="/" element={<Homepage />} />
           <Route path="*" element={<Homepage />} />
